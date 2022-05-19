@@ -1,7 +1,7 @@
 .current-info{
     display: flex;
     justify-content: space-between;
-    margin:.8rem ;
+    margin:8px ;
 }
 .score{
     margin-left:auto;
@@ -10,10 +10,9 @@
     margin:3rem 0;
 }
 .choice-label{
-    
-    padding:.5rem .75rem;
-    border-radius:.2rem;
-    margin-left:.5rem;
+    padding:8px 12px;
+    border-radius:3.2px;
+    margin-left:8px;
 }
 .choice-label:hover{
     background-color: var(--primary);

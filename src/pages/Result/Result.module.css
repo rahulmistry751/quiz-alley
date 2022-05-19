@@ -7,7 +7,7 @@
     text-decoration: underline;
 }
 .user-score{
-    padding:.5rem 0;
+    padding:8px 0;
 }
 .quiz-content{
     margin:1rem 0;
@@ -17,8 +17,8 @@
 }
 .opt{
     margin:1rem 0;
-    padding:.5rem .75rem;
-    border-radius: .2rem;
+    padding:8px 12px;
+    border-radius: 3.2px;
 }
 .incorrect{
     background-color: #EF4444;
