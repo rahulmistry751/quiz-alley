@@ -1,7 +1,13 @@
 @import url(./styles/variables.css);
-html,body,#root,.App{
+html,body{
   height:100%;
 
+}
+#root{
+  height:100%;
+}
+.App{
+  height:100vh;
 }
 body{
   font-family: 'Fira Sans', sans-serif;
