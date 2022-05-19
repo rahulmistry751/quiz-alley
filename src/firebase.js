@@ -1,21 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import {getDocs, getFirestore} from 'firebase/firestore';
 const firebaseApp=initializeApp({
-
-    apiKey: "AIzaSyBqeQmeu4TyYxzPJE06hFN6xFpmmavFFPA",
   
-    authDomain: "fir-alley.firebaseapp.com",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
   
-    projectId: "fir-alley",
-  
-    storageBucket: "fir-alley.appspot.com",
-  
-    messagingSenderId: "359987722714",
-  
-    appId: "1:359987722714:web:55ff3d4ee972acb71c28e3"
-  
-  }
-  )
+}
+)
 const db=getFirestore(firebaseApp);
-console.log(db);
 export {db}
