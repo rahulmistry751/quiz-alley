@@ -1,0 +1,28 @@
+.main-content{
+    width:60%;
+    min-width:22rem;
+    margin:auto;
+}
+.result-heading{
+    text-decoration: underline;
+}
+.user-score{
+    padding:.5rem 0;
+}
+.quiz-content{
+    margin:1rem 0;
+}
+.mcqs{
+    margin-bottom:2rem;
+}
+.opt{
+    margin:1rem 0;
+    padding:.5rem .75rem;
+    border-radius: .2rem;
+}
+.incorrect{
+    background-color: #EF4444;
+}
+.correct{
+    background-color: #15803D;
+}

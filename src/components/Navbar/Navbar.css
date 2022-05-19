@@ -1,0 +1,7 @@
+.navbar{
+    background-color: var(--secondary);
+    margin-bottom:1rem;
+}
+.navbar-brand{
+    color:var(--primary);
+}

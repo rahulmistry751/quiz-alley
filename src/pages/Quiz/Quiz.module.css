@@ -1,0 +1,23 @@
+.main-content{
+    width:60%;
+    min-width:22rem;
+    margin:auto;
+    height:100%;
+    text-align: center;
+}
+.quiz-content{
+    height: 100%;
+    text-align: center;
+    
+}
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    margin:.8rem ;
+}
+.score{
+    margin-left:auto;
+}
+.button{
+    margin:1rem auto;
+}

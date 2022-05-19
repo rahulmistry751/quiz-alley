@@ -1,0 +1,26 @@
+.card{
+    font-family: 'Fira Sans', sans-serif;
+    width:22rem;
+    min-width:22rem;
+    height:20rem;
+    justify-content: flex-start;
+    margin:0;
+}
+.card:hover{
+    cursor:pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+.card-image-container{
+    height:70%;
+}
+.card-content{
+    
+    margin:auto;
+    display: flex;
+    align-items: center;
+
+}
+.card-header{
+    margin:0;
+    text-align: center;   
+}
