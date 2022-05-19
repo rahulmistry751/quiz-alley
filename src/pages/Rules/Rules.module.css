@@ -1,0 +1,14 @@
+.rules{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rules-section{
+    width:28rem;
+    border:1px solid var(--font-color);
+    padding:1rem 2rem;
+}
+.point{
+    margin:1rem 0;
+}

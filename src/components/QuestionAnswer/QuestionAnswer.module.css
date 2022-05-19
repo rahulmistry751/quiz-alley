@@ -1,0 +1,38 @@
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    margin:8px ;
+}
+.score{
+    margin-left:auto;
+}
+.question{
+    margin:3rem 0;
+}
+.choice-label{
+    padding:8px 12px;
+    border-radius:3.2px;
+    margin-left:8px;
+}
+.choice-label:hover{
+    background-color: var(--primary);
+}
+.choice-question{
+    height:100%;
+}
+.quiz-form{
+    height:100%;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-bottom:2rem;
+}
+.choice-section{
+    width:100%;
+}
+.selected{
+    background-color: var(--primary);
+    border:none;
+}
