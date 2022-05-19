@@ -6,7 +6,7 @@ const Quiz=()=>{
     return(
         <div>
         <div class={`${style['main-content']}`}>
-            <QuestionAnswer ></QuestionAnswer>
+            <QuestionAnswer category={categoryName} ></QuestionAnswer>
            
         </div>
         </div>
