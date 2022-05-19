@@ -8,6 +8,7 @@ const Home=()=>{
     useEffect(()=>{
         return(async ()=>{
             try{
+                console.log("inside")
                 const snapshot=await getDocs(collection(db,"quizData"));
                 
                 console.log(snapshot.docs)
