@@ -6,7 +6,7 @@ import { collection, getDocs,setDoc,doc } from 'firebase/firestore';
 const Home=()=>{
     const [categoriesData,setCategoriesData]=useState([]);
     useEffect(()=>{
-        return(async ()=>{
+        (async ()=>{
             try{
                 console.log("inside")
                 const snapshot=await getDocs(collection(db,"quizData"));
