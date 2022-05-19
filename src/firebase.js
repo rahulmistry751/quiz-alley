@@ -17,5 +17,5 @@ const firebaseApp=initializeApp({
   }
   )
 const db=getFirestore(firebaseApp);
-
+console.log(db);
 export {db}
