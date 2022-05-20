@@ -15,7 +15,7 @@ const QuestionAnswer=({category})=>{
    // verifies the user choice
     const checkAnswer=userChoice=>{
         if(userChoice===answer){
-            setUserScore(prevScore=>prevScore+1)
+            setUserScore(prevScore=>prevScore+2)
         }
     }
     // sets user choice
