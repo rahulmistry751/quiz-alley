@@ -1,14 +1,24 @@
 @import url(./styles/variables.css);
-html,body{
-  height:100%;
 
-}
-#root{
-  height:100%;
-}
-.App{
-  height:100vh;
-}
 body{
   font-family: 'Fira Sans', sans-serif;
+}
+.App{
+  min-height:100vh;
+}
+/* Dark theme */
+.dark-App{
+  color:var(--font-color-invert);
+  background: #000000;
+
+}
+.dark-navbar{
+  background-color: var(--dark-surface);
+}
+.dark-card{
+  background-color: var(--dark-surface);
+  color:var(--font-color-invert);
+}
+.dark-card:hover{
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
 }

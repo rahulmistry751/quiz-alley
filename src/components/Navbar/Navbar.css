@@ -1,7 +1,15 @@
 .navbar{
     background-color: var(--secondary);
     margin-bottom:1rem;
+    position:sticky;
+    top:0px;
 }
 .navbar-brand{
+    color:var(--primary);
+}
+.list-item{
+    cursor: pointer;
+}
+.light-wand{
     color:var(--primary);
 }

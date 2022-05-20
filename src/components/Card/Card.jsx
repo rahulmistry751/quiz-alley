@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 import style from './Card.module.css';
 import { useQuiz } from '../../context/quiz-context';
+import { useTheme } from '../../context/theme-context';
 import { clearUserData } from '../../utils/clearUserData';
 const Card=({detail})=>{
     const {title,subtitle,img_url,categoryName}=detail;
-    const {setUserAnswer,setUserScore,userAnswer}=useQuiz();
+    const {setUserAnswer,setUserScore}=useQuiz();
+    const {theme}=useTheme();
     return(
         <>
         <Link to={`/rules/${categoryName}`} onClick={()=>clearUserData(setUserAnswer,setUserScore)}>
-            <div className={`card ${style.card}`}>
+            <div className={`card ${style.card} ${theme==="dark"?"dark-card":""}`}>
         <div className={`${style['card-image-container']}`}>
             <img src={img_url} alt={`${categoryName}'s`}/>
         </div>

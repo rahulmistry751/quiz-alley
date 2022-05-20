@@ -18,4 +18,4 @@ const Result=()=>{
         </>
     )
 }
-export {Result}
+export {Result};

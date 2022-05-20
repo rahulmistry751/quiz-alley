@@ -4,11 +4,10 @@
     margin:auto;
     height:100%;
     text-align: center;
+    padding:1rem;
 }
 .quiz-content{
     height: 100%;
-    text-align: center;
-    
 }
 .current-info{
     display: flex;
