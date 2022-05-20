@@ -32,31 +32,30 @@ const QuestionAnswer=({category})=>{
         else
          nextQuestionhandler();
     }
-    console.log(userScore)
     return(
         <>
         <div className={`${style['current-info']}`}>
-        <span class={`${style['question-status']}`}>Question {currentQuestionIndex+1}/5</span>
+        <span className={`${style['question-status']}`}>Question {currentQuestionIndex+1}/5</span>
         <span className={`${style['score']}`}>Score:{userScore}</span>
         </div>
         <div>
         <h2 className={`${style.question} h2`}>
         {question}
         </h2>
-        <form class={`${style['quiz-form']}`} onSubmit={(e)=>userChoiceSubmitHandler(e)}>
+        <form className={`${style['quiz-form']}`} onSubmit={(e)=>userChoiceSubmitHandler(e)}>
         <div className={`${style.options}`}>
         {option.map((choice,index)=>
-        (   <div class={`${style['choice-section']}`} key={index}>
+        (   <div className={`${style['choice-section']}`} key={index}>
 
             <input type="radio" name="choice" id={choice} required onChange={()=>userAnswerHandler(choice)} autoComplete="0" checked={userAnswer!==undefined?Object.values(userAnswer).includes(choice):false}/>
-            <label htmlFor={choice} className={`${style['choice-label']} ${userAnswer!==undefined?Object.values(userAnswer).includes(choice):false && style.selected} fs-20`} >
+            <label htmlFor={choice} className={`${style['choice-label']} ${(userAnswer!==undefined?Object.values(userAnswer).includes(choice):false) && style.selected} fs-20`} >
                 {choice}
             </label>
             </div>
         )
         )}
         </div>
-        <button type="submit" class={`button ${style.button} button-md`} >{currentQuestionIndex!==quizQuestions[category].length-1?"Next":"Submit"}</button>
+        <button type="submit" className={`button ${style.button} button-md`} >{currentQuestionIndex!==quizQuestions[category].length-1?"Next":"Submit"}</button>
         </form>
         </div>
         
